@@ -1,0 +1,95 @@
+.box-1 {
+    grid-column: 1 / span 2;
+    background-color: $color-white;
+    padding: 4rem;
+    border-radius: 0.8rem 0.8rem 0 0;
+    box-shadow: 0 1.5rem 3rem 0 rgba(0, 81, 171, 0.15);
+
+    &__header {
+        color: $color-lime;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.0225rem;
+        padding: 2.4rem 0 1.1rem 0;
+    }
+
+    &__text {
+        color: $color-grey;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.6rem; /* 162.5% */
+        letter-spacing: -0.02rem;
+    }
+
+     @media only screen and (max-width: 37.5em) {
+        grid-column: auto;
+    }
+}
+
+.box-2 {
+    background-color: $color-cyan;
+    padding: 4rem;
+    grid-row-start: 2;
+    border-radius: 0 0 0 0.8rem;
+    box-shadow: 0 1.5rem 3rem 0 rgba(0, 81, 171, 0.15);
+
+    &__price {
+        color: $color-white;
+        font-size: 3.2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.04rem;
+        padding: 1.8rem 0 0.4rem 0;
+
+        span {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.6rem; /* 162.5% */
+            letter-spacing: -0.02rem;
+            opacity: 0.5;
+        }
+    }
+
+    &__text {
+        color: $color-white;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.6rem; /* 162.5% */
+        letter-spacing: -0.02rem;
+        padding-bottom: 2.6rem;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+        border-radius: 0;
+    }
+}
+
+.box-3 {
+    grid-row-start: 2;
+    background-color: $color-cyan;
+    opacity: 0.75;
+    padding: 4rem;
+    border-radius: 0 0 0.8rem 0;
+    box-shadow: 0 1.5rem 3rem 0 rgba(0, 81, 171, 0.15);
+
+    &__text {
+        color: $color-white;
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2rem; /* 142.857% */
+        letter-spacing: -0.0175rem;
+        opacity: 0.75;
+        padding-top: 1.8rem;
+    }
+
+     @media only screen and (max-width: 37.5em) {
+        grid-row: auto;
+        border-radius: 0 0 0.8rem 0.8rem;
+    }
+}

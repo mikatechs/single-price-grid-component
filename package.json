@@ -1,0 +1,14 @@
+{
+  "name": "single-price-grid-component",
+  "version": "1.0.0",
+  "description": "Single price grid component",
+  "main": "index.js",
+  "scripts": {
+    "start:scss": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Mika Varshanidze",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
